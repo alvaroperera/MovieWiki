@@ -67,8 +67,8 @@ class MovieSearchViewController: UIViewController, UITableViewDataSource, UITabl
         if segue.identifier == "goToMovieDetail" {
             if let indexPath = moviesResponseTableView.indexPathForSelectedRow?.first {
                 let movieID = movieItems[indexPath].imdbID
-                let destinationVC = segue.destination as? MovieDetailViewController
-                destinationVC!.movieID = movieID }
+                let destinationVC = segue.destination as? MovieDetailTableViewController
+                destinationVC?.imdbID = movieID }
         }
     }
 }

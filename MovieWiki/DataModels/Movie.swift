@@ -8,14 +8,14 @@
 import Foundation
 
 struct Movie: Codable {
-    let title: String
-    let year: String
-    let porterURL: String
-    let plot: String
-    let duration: String
-    let director: String
-    let genre: String
-    let country: String
+    let Title: String
+    let Year: String
+    let Poster: String
+    let Plot: String
+    let Runtime: String
+    let Director: String
+    let Genre: String
+    let Country: String
 }
 
 struct MovieResponse: Codable {
