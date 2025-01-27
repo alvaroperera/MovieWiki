@@ -29,5 +29,5 @@ struct MovieItem: Codable {
     let Year: String
     let imdbID: String
     let `Type`: String
-    let Porter: String
+    let Poster: String
 }
