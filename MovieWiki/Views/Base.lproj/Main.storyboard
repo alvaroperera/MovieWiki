@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="-27"/>
+            <point key="canvasLocation" x="-102" y="-27"/>
         </scene>
         <!--Movie Detail Table View Controller-->
         <scene sceneID="oyI-fO-Ok0">
@@ -291,7 +291,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjn-b0-jT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858.7786259541983" y="-160.56338028169014"/>
+            <point key="canvasLocation" x="669" y="-27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d2E-X4-gC9">
@@ -309,7 +309,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP2-dc-9Gw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-891" y="-27"/>
         </scene>
     </scenes>
     <resources>

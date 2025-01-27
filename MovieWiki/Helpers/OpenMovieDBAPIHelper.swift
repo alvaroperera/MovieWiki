@@ -13,13 +13,13 @@ class OpenMovieDBAPIHelper {
     // https://www.omdbapi.com/?s=avatar&apikey=eb0480c2
     static func getMoviesBySearchName(name: String,
                                       baseUrl: String = "https://www.omdbapi.com/?s=",
-                                      apiKey: String = apiKey) async throws -> [MovieItem] {
+                                      apiKey: String = apiKey) async throws -> [Movie] {
         
         let petition = URL(string: "\(baseUrl)\(name)&apikey=\(apiKey)")!
         let (data, _) = try await URLSession.shared.data(from: petition)
         let result = try JSONDecoder().decode(MovieResponse.self, from: data)
         
-        return result.Search
+        return result.search
     }
     
     static func getMovieByImdbID(imdbID: String,

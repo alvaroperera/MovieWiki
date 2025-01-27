@@ -11,7 +11,7 @@ class MovieSearchViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet weak var moviesResponseTableView: UITableView!
     
-    var movieItems: [MovieItem] = []
+    var movieItems: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

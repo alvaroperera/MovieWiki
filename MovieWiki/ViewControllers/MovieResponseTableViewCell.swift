@@ -24,8 +24,8 @@ class MovieResponseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillCell(from movieResponse: MovieItem){
-        moviePoster.loadFrom(url: URL(string: movieResponse.Poster)!)
-        movieTitle.text = "\(movieResponse.Title) (\(movieResponse.Year))"
+    func fillCell(from movieResponse: Movie){
+        moviePoster.loadFrom(url: URL(string: movieResponse.poster)!)
+        movieTitle.text = "\(movieResponse.title) (\(movieResponse.year))"
     }
 }

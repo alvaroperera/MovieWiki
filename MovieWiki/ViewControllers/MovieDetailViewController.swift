@@ -32,14 +32,14 @@ class MovieDetailTableViewController : UITableViewController {
             do {
                 self.movie = try await OpenMovieDBAPIHelper.getMovieByImdbID(imdbID: self.imdbID!)
                 DispatchQueue.main.async {
-                    self.posterImageView.loadFrom(url: URL(string: self.movie!.Poster)!)
-                    self.movieYear.text = self.movie!.Year
-                    self.movieTitulo.text = self.movie!.Title
-                    self.movieDirector.text = self.movie!.Director
-                    self.movieGenero.text = self.movie!.Genre
-                    self.moviePais.text = self.movie!.Country
-                    self.movieDuracion.text = self.movie!.Runtime
-                    self.movieSinopsis.text = self.movie!.Plot
+                    self.posterImageView.loadFrom(url: URL(string: self.movie!.poster)!)
+                    self.movieYear.text = self.movie!.year
+                    self.movieTitulo.text = self.movie!.title
+                    self.movieDirector.text = self.movie!.director
+                    self.movieGenero.text = self.movie!.genre
+                    self.moviePais.text = self.movie!.country
+                    self.movieDuracion.text = self.movie!.runtime
+                    self.movieSinopsis.text = self.movie!.plot
                     self.detailTableView.reloadData()
                 }
             } catch {
