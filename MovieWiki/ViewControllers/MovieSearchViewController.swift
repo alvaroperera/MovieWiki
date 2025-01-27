@@ -65,8 +65,8 @@ class MovieSearchViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToMovieDetail" {
-            if let indexPath = moviesResponseTableView.indexPathForSelectedRow?.first {
-                let movieID = movieItems[indexPath].imdbID
+            if let indexPath = moviesResponseTableView.indexPathForSelectedRow {
+                let movieID = movieItems[indexPath.row].imdbID
                 let destinationVC = segue.destination as? MovieDetailTableViewController
                 destinationVC?.imdbID = movieID }
         }
